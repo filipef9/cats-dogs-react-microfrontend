@@ -1,2 +1,13 @@
 image:
   file: .gitpod.Dockerfile
+
+ports:
+  - port: 3000 # container app
+    visibility: public
+    onOpen: open-preview
+  - port: 3001 # dogs app
+    visibility: public
+    onOpen: ignore
+  - port: 3002 # cats app
+    visibility: public
+    onOpen: ignore
